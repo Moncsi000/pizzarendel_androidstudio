@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizzarendelés"
+        android:textSize="40dp"
+        android:layout_marginTop="28dp"
+        />
+
+    <ImageView
+        android:id="@+id/kep"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_launcher_background"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/elso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24 cm"/>
+        <RadioButton
+            android:id="@+id/masodik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="28 cm"/>
+        <RadioButton
+            android:id="@+id/harmadik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40 cm"/>
+
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/vnev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Vezetéknév"
+        android:inputType="text"
+        android:layout_marginTop="16dp"/>
+
+
+    <EditText
+        android:id="@+id/knev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Keresztnév"
+        android:inputType="text"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Méret"
+
+        />
+
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Megrendelem"
+        android:layout_marginTop="16dp"
+        />
+
+</LinearLayout>

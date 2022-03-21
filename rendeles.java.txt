@@ -1,0 +1,30 @@
+package com.example.pizzarend;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class rendeles extends AppCompatActivity {
+
+    private TextView rendel;
+    private TextView meret;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_rendeles);
+
+        meret = findViewById(R.id. textview_meret);
+
+        rendel = findViewById(R.id. textview_rendel);
+
+
+
+        rendel.setText(getIntent().getStringExtra("vezeteknev")+" "+ getIntent().getStringExtra("keresztnev"));
+
+        meret.setText(getIntent().getStringExtra("meret"));
+
+
+    }
+}
